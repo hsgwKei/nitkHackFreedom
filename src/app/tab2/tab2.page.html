@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="#ffffff">
+    <ion-title>
+      lead farmer
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="false">
+  <div>
+    <h1 id="date">{{date}}</h1>
+  </div>
+  <div class="main-chart">
+    <div class="current-temp">
+      <p class="data-title-temp">平均気温</p>
+      <p class="main-data-unit"><span class="main-data-temp">{{current_temp}}</span>℃</p>
+    </div>
+    <div class="current-humidity">
+      <p class="data-title-humidity">平均湿度</p>
+      <p class="main-data-unit"><span class="main-data-humidity">{{current_humidity}}</span>%</p>
+    </div>
+    <div class="canvas_div">
+      <canvas id="canvas2" width="800px" height="500px"></canvas>
+    </div>
+  </div>
+</ion-content>
